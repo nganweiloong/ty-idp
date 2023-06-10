@@ -27,7 +27,7 @@ const Display: React.FC = () => {
       {result.map(data => (
         <Box sx={{ border: "1px solid black", p: 1 }} key={data.id} mb={2}>
           <Chip variant="filled" key={data.id} label={data.id}></Chip>
-          <Box sx={{ ml: 2 }}>
+          <Box sx={{ display: "flex" }}>
             <Typography>humidity: {data.humidity}</Typography>
             <Typography> temperature: {data.temperature}</Typography>
           </Box>
